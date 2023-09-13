@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Heavy.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Heavy.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Bold.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Demi.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Demi.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Medium.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Medium.ttf) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Regular.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Light.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Light.ttf) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-Thin.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-Thin.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url(../Assets/Fonts/AvenirNextCyr-UltraLight.ttf) format("ttf"),
+    url(../Assets/Fonts/AvenirNextCyr-UltraLight.woff) format("woff");
+  font-weight: 100;
+  font-style: normal;
+}

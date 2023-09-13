@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/slider.css" />
+    <link rel="stylesheet" href="Styles/fonts.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/Pictures/icon.ico" />
+    <meta name="author" content="Полина Кузьменок" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <meta name="keywords" content="генеалогическое, древо, family, tree, проект, приложение, с#" />
+    <meta name="description" content="Этот сайт содержит содержание приложения Family Tree" />
+    <noscript>
+        <style>
+            .body_hide {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <title>Family Tree</title>
+</head>
+<body class="body_hide">
+    <aside>
+        <ul>
+            <li id="h1">Описание</li>
+            <li id="h2">Технологии</li>
+            <li id="h3">Разработка</li>
+            <li id="h4">Содержание</li>
+            <li id="h5">Просмотр</li>
+        </ul>
+        <a href="index.html"> <button>> На главную</button></a>
+    </aside>
+    <main>
+        <div class="go-away">
+            <a href="index.html" title="Назад"><button>
+                    <</button></a>
+            <h1>Family Tree</h1>
+        </div>
+        <section id="1">
+            <h2>Описание</h2>
+            <h3>Описание проекта</h3>
+            <p>
+                Компьютерное приложение для создания и
+                редактирования генеалогических деревьев.
+            </p>
+            <h3>Цель проекта</h3>
+            <p>
+                Разработать программное обеспечение, обеспечивающее удобный и
+                интуитивно понятный интерфейс, который позволит пользователям легко
+                создавать, редактировать и визуализировать свои генеалогические древа.
+                Программный продукт обеспечивает удобное и наглядное представление
+                генеалогической информации, позволяя пользователям оживить свою
+                генеалогическую историю и просматривать в электронном виде свои
+                родственные связи.
+            </p>
+            <h3>Ссылки</h3>
+            <p><a href="https://github.com/krabochki/FamilyTree">Репозиторий</a></p>
+            <p><a href="Assets/Docs/Family Tree docs.docx">Документация</a></p>
+        </section>
+        <section id="2">
+            <h2>Технологии</h2>
+            <ul>
+                <li>Язык программирования: C#</li>
+                <li>Среда разработки: Microsoft Visual Studio</li>
+                <li>Фреймоворк: Windows Presentation Foundation (WPF)</li>
+                <li>Библиотеки: GiGraph (на основе Graphviz)</li>
+            </ul>
+        </section>
+        <section id="3">
+            <h2>Разработка</h2>
+            <ul>
+                <li>Время разработки: июнь 2023</li>
+                <li>
+                    Этапы разработки:
+                    <ol>
+                        <li>Постановка задачи</li>
+                        <li>Проектирование</li>
+                        <li>Реализация</li>
+                        <li>Тестирование</li>
+                        <li>Применение</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section id="4">
+            <h2>Содержание</h2>
+            <h3>Меню</h3>
+            <p>
+                Четыре основных пункта меню, при помощи которых пользователь может
+                перемещаться по нужным таблицам и изменять их:
+            </p>
+            <ol>
+                <li>
+                    Персоны – с помощью этого пункта можно вносить изменения в таблицу
+                    персон базы данных
+                </li>
+                <li>
+                    Места – с помощью этого пункта можно вносить изменения в таблицу
+                    мест базы данных
+                </li>
+                <li>
+                    События – с помощью этого пункта можно вносить изменения в таблицу
+                    мест базы данных
+                </li>
+                <li>
+                    Древо – с помощью этого пункта можно создавать генеалогическое древо
+                    на основе данных таблицы
+                </li>
+            </ol>
+            <p>А также пункт меню «Настройки», позволяющий:</p>
+            <ol>
+                <li>Быстро открыть/создать новую базу</li>
+                <li>Открыть примеры готовых баз данных</li>
+                <li>Открыть справку</li>
+            </ol>
+            <h3>Функции</h3>
+            <p>Четыре основных функции со всеми таблицами:</p>
+            <ol>
+                <li>Добавление</li>
+                <li>Изменение</li>
+                <li>Удаление</li>
+                <li>Просмотр</li>
+            </ol>
+            <p>Дополнительные функции в «Персонах»:</p>
+            <ol>
+                <li>Фильтрация</li>
+                <li>Сортировка</li>
+            </ol>
+            <p></p>
+        </section>
+        <section id="5">
+            <h2 id="cent">Просмотр</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>Главное меню</p>
+                        <img src="Assets/Pictures/Family Tree/1.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Таблица персон</p>
+                        <img src="Assets/Pictures/Family Tree/2.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Таблица мест</p>
+                        <img src="Assets/Pictures/Family Tree/3.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Таблица событий</p>
+                        <img src="Assets/Pictures/Family Tree/4.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Добавление персоны</p>
+                        <img src="Assets/Pictures/Family Tree/5.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Изменение персоны</p>
+                        <img src="Assets/Pictures/Family Tree/6.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Просмотр персоны</p>
+                        <img src="Assets/Pictures/Family Tree/7.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Добавление/изменение места</p>
+                        <img src="Assets/Pictures/Family Tree/8.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Просмотр мест</p>
+                        <img src="Assets/Pictures/Family Tree/9.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Добавление/изменение события</p>
+                        <img src="Assets/Pictures/Family Tree/10.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Просмотр события</p>
+                        <img src="Assets/Pictures/Family Tree/11.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Создание древа</p>
+                        <img src="Assets/Pictures/Family Tree/12.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Выбираем другие настройки древу</p>
+                        <img src="Assets/Pictures/Family Tree/13.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Созданное генеалогическое древо</p>
+                        <img src="Assets/Pictures/Family Tree/14.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Фильтрация (показаны только люди без фото)</p>
+                        <img src="Assets/Pictures/Family Tree/15.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Фильтрация (показаны только живые люди)</p>
+                        <img src="Assets/Pictures/Family Tree/16.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Прочее</p>
+                        <img src="Assets/Pictures/Family Tree/17.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Я в социальных сетях</p>
+        <a href="https://github.com/krabochki/">
+            <img src="Assets/Pictures/github.png" alt="Github" /></a>
+        <a href="https://t.me/krabochki">
+            <img src="Assets/Pictures/telegram.png" alt="Telegram" /></a>
+        <a href="https://vk.com/nanananana_come_on">
+            <img src="Assets/Pictures/vk.png" alt="Вконтакте" /></a>
+        <a href="https://www.instagram.com/krabochki/">
+            <img src="Assets/Pictures/inst.png" alt="Instagram" /></a>
+    </footer>
+</body>
+<script src="Scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</html>
