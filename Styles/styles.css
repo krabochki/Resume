@@ -210,6 +210,9 @@ p {
 section {
   margin-top: 2em;
 }
+
+
+
 ul,
 ol {
   list-style-position: inside;
@@ -221,12 +224,12 @@ footer {
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 столбца */
+  grid-template-columns: repeat(5, 1fr); /* 4 столбца */
   grid-template-rows: auto auto; /* 2 строки */
   row-gap: 1em;
   width: max-content;
   margin: 0 auto;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
   padding-top: 20px;
   padding-bottom: 25px;
 }
@@ -234,7 +237,7 @@ footer p {
   font-size: 1.1rem;
   letter-spacing: 2px;
   grid-row: 1; /* Объединяем 2 строки */
-  grid-column: 1/5; /* Занимаем 1 столбец */
+  grid-column: 1/6; /* Занимаем 1 столбец */
 }
 footer img {
   height: 3.5em;
@@ -282,5 +285,9 @@ footer {
   ul,
   ol {
     margin-left: 1em;
+  }
+
+  footer {
+    column-gap: 0.75rem;
   }
 }
