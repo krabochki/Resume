@@ -39,19 +39,30 @@ document.querySelector("#settings-mobile").onclick = function (event) {
   }
 };
 
+
 optionsButton.onclick = function (event) {
   // вывести тип события, элемент и координаты клика
   active = !active;
   settingsMobile = !settingsMobile
 
   if (active) {
+    
+    var langs = document.getElementsByClassName('translate');
+    for (var i = 0; i < langs.length; ++i) {
+      langs[i].classList.add('pointer-events-on');
+
+    }
     document.querySelector("#lang-panel").style.opacity = "100%";
     optionsButton.classList.add("options-active");
 
+    document.querySelector('.toggle').classList.add('pointer-events-on');
+ 
     document.querySelector("aside").querySelector("ul").style.filter =
       "blur(8px)";
     document.querySelector("aside").querySelector("ul").style.pointerEvents =
       "none";
+
+
     try {
       document.querySelector("aside").querySelector("ul").style.color = "gray";
     } catch {}
@@ -65,7 +76,13 @@ optionsButton.onclick = function (event) {
   } else {
     document.querySelector("aside").querySelector("ul").style.pointerEvents =
       "auto";
+      document.querySelector('.toggle').classList.remove('pointer-events-on');
+      var langs = document.getElementsByClassName('translate');
 
+      for (var i = 0; i < langs.length; ++i) {
+        langs[i].classList.remove('pointer-events-on');
+  
+      }
     try {
       document.querySelector("#lang-panel").style.opacity = "0%";
       document.querySelector("aside").querySelector("ul").style.color =
