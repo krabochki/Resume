@@ -18,140 +18,181 @@
                 opacity: 1 !important;
             }
         </style>
-    </noscript>`
-    <title>Политех</title>
+    </noscript>
+    <title class="lang" key="polytech">Политех</title>
 </head>
 <body class="body_hide">
     <aside>
+        <button id="lang-switcher">°°°</button>
+        <div id="lang-panel">
+          <div>          <p class="lang" key="choose-lang">Выберите язык</p>
+          </div>
+          <div>
+            
+            <span  id="en" class="translate">
+              <img src="Assets/Pictures/en.png" alt="">
+                <button value="">en</button>
+            </span>
+            <span class="active translate"  id="ru">
+              <img src="Assets/Pictures/ru.png" alt="">
+    
+                <button value="">ru</button>
+            </span>
+              <span  id="be" class="translate">
+                <img src="Assets/Pictures/by.png" alt="">
+    
+                <button value="">by</button>
+              </span>
+          </div>
+    
+          <div>
+    
+            <label class="toggle">
+              <span class="toggle-label lang" key="dark-mode">Тёмный режим </span>
+              <input class="toggle-checkbox"  onchange="changeMode(this)" type="checkbox" unchecked>
+              <div class="toggle-switch"></div>
+            </label>
+            
+          </div>
+          
+        </div>
         <ul>
-            <li id="h1">Описание</li>
-            <li id="h2">Технологии</li>
-            <li id="h3">Разработка</li>
-            <li id="h4">Содержание</li>
-            <li id="h5">Просмотр</li>
+
+          
+            <li class="lang" key="contents">Содержание</li>
+            <li class="lang" key="description" id="h1">Описание</li>
+            <li class="lang" key="technologies" id="h2">Технологии</li>
+            <li class="lang" key="development" id="h3">Разработка</li>
+            <li class="lang" key="contents" id="h4">Содержание</li>
+            <li class="lang" key="view" id="h5">Просмотр</li>
         </ul>
-        <a href="index.html"> <button>> На главную</button></a>
+        <a href="index.html"><button class="lang" key="home">На главную</button></a>
     </aside>
     <main>
         <div class="go-away">
             <a href="index.html" title="Назад"><button>
                     <</button></a>
-            <h1>Политех</h1>
+            <h1 class="lang" key="polytech">Политех</h1>
         </div>
-        <section id="1">
-            <h2>Описание</h2>
-            <h3>Описание проекта</h3>
-            <p>
-                Компьютерная игра «Политех» про мой колледж.
-            </p>
-            <h3>Цель проекта</h3>
-            <p>
-                Привлечение новых учащихся в политехнический колледж, мотивирование учащихся более творчески подходить к
-                учебному процессу посредством отображения их будней в креативной форме.
-            </p>
-            <h3>Ссылки</h3>
-            <p>
-                <a href="https://github.com/krabochki/Polytech">Репозиторий</a>
-            </p>
-            <p>
-                <a href="Assets/Docs/Polytech docs.docx">Документация</a>
-            </p>
-        </section>
-        <section id="2">
-            <h2>Технологии</h2>
-            <ul>
-                <li>Язык программирования: C#</li>
-                <li>Среда разработки: Unity</li>
-            </ul>
-        </section>
-        <section id="3">
-            <h2>Разработка</h2>
-            <ul>
-                <li>Время разработки: декабрь 2022 — январь 2023</li>
-                <li>
-                    Этапы разработки:
-                    <ol>
-                        <li>Постановка задачи</li>
-                        <li>Проектирование</li>
-                        <li>Реализация</li>
-                        <li>Тестирование</li>
-                        <li>Применение</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
-        <section id="4">
-            <h2>Содержание</h2>
-            Игра содержит следующее наполнение:
-            <ul>
-                <li>Главное меню</li>
-                <li>Создание кастомного персонажа</li>
-                <li>Игровая статистика</li>
-                <ol>
-                    <li>Фотоальбом</li>
-                    <li>Просмотр прогресса</li>
-                    <li>Содержание дней</li>
-                </ol>
-                <li>Диалоговая система</li>
-                <li>Передвижение</li>
-                <li>Уровневая система</li>
-                <li>Настройки</li>
-            </ul>
-        </section>
-        <section id="5">
-            <h2 id="cent">Просмотр</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p>Главное меню (вход)</p>
-                        <img src="Assets/Pictures/Polytech/1.png" alt="" />
+        <div id="main-span">
+            <section id="1">
+                <h2 class="lang" key="description">Описание</h2>
+                <h3 class="lang" key="proj-descr">Описание проекта</h3>
+                <p class="lang" key="description2">
+                    Компьютерная игра «Политех» про мой колледж.
+                </p>
+                <h3 class="lang" key="goal">Цель проекта</h3>
+                <p class="lang" key="description1">
+                    Привлечение новых учащихся в политехнический колледж, мотивирование учащихся более творчески подходить к
+                    учебному процессу посредством отображения их будней в креативной форме.
+                </p>
+                <h3 class="lang" key="links">Ссылки</h3>
+                <p>
+                    <a class="lang" key="repo" href="https://github.com/krabochki/Polytech">Репозиторий</a>
+                </p>
+                <p>
+                    <a class="lang" key="docs" href="Assets/Docs/Polytech docs.docx">Документация</a>
+                </p>
+            </section>
+            <section id="2">
+                <h2 class="lang" key="technologies">Технологии</h2>
+                <ul>
+                    <li class="lang" key="programminglanguagepolytech">Язык программирования: C#</li>
+                    <li class="lang" key="developmentenvironmentpolytech">Среда разработки: Unity</li>
+                </ul>
+            </section>
+            <section id="3">
+                <h2 class="lang" key="develop">Разработка</h2>
+                <ul>
+                    <li class="lang" key="developmenttimepolytech">Время разработки: декабрь 2022 — январь 2023</li>
+                    <li>
+                        <span class="lang" key="stages"> Этапы разработки:</span>
+
+                        <ol>
+                            <li class="lang" key="problem">Постановка задачи</li>
+                            <li class="lang" key="design">Проектирование</li>
+                            <li class="lang" key="realize">Реализация</li>
+                            <li class="lang" key="test">Тестирование</li>
+                            <li class="lang" key="app">Применение</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+            <section id="4">
+                <h2 class="lang" key="cont">Содержание</h2>
+                <p class="lang" key="gameContent">Игра содержит следующее наполнение:</p>
+                <ul>
+                        <li class="lang" key="mainMenu">Главное меню</li>
+                        <li class="lang" key="createCustomCharacter">Создание кастомного персонажа</li>
+                        <li class="lang" key="gameStatistics">Игровая статистика
+                            <ol>
+                                <li class="lang" key="photoAlbum">Фотоальбом</li>
+                                <li class="lang" key="progressView">Просмотр прогресса</li>
+                                <li class="lang" key="dailyContents">Содержание дней</li>
+                            </ol>
+                        </li>
+                        <li class="lang" key="dialogueSystem">Диалоговая система</li>
+                        <li class="lang" key="movement">Передвижение</li>
+                        <li class="lang" key="levelSystem">Уровневая система</li>
+                        <li class="lang" key="settings">Настройки</li>
+                    
+                </ul>
+            </section>
+            <section id="5">
+                <h2 id="cent" class="lang" key="view">Просмотр</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="lang" key="mainmenu">Главное меню (вход)</p>
+                            <img src="Assets/Pictures/Polytech/1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="gamestart">Начало игры</p>
+                            <img src="Assets/Pictures/Polytech/2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="createcharacter">Создание персонажа</p>
+                            <img src="Assets/Pictures/Polytech/3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="gallery">Галерея моментов</p>
+                            <img src="Assets/Pictures/Polytech/4.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="daycontent">Содержание дней</p>
+                            <img src="Assets/Pictures/Polytech/5.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="gameprogress">Игровой прогресс</p>
+                            <img src="Assets/Pictures/Polytech/6.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="settings">Настройки</p>
+                            <img src="Assets/Pictures/Polytech/7.png" alt="" />
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <p>Начало игры</p>
-                        <img src="Assets/Pictures/Polytech/2.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Создание персонажа</p>
-                        <img src="Assets/Pictures/Polytech/3.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Галерея моментов</p>
-                        <img src="Assets/Pictures/Polytech/4.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Содержание дней</p>
-                        <img src="Assets/Pictures/Polytech/5.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Игровой прогресс</p>
-                        <img src="Assets/Pictures/Polytech/6.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Настройки</p>
-                        <img src="Assets/Pictures/Polytech/7.png" alt="" />
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Я в социальных сетях</p>
+        <p class="lang" key="social-media">Я в социальных сетях</p>
         <a href="https://github.com/krabochki/">
-            <img src="Assets/Pictures/github.png" alt="Github" /></a>
-            <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
-                <img src="Assets/Pictures/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://t.me/krabochki">
-            <img src="Assets/Pictures/telegram.png" alt="Telegram" /></a>
+          <img id="git" src="Assets/Pictures/icons/light/github.png" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
+          <img id="linkedin" src="Assets/Pictures/icons/light/linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://t.me/krabochki">
+          <img id="telegram" src="Assets/Pictures/icons/light/telegram.png" alt="Telegram" /></a>
         <a href="https://vk.com/nanananana_come_on">
-            <img src="Assets/Pictures/vk.png" alt="Вконтакте" /></a>
+          <img id="vk" src="Assets/Pictures/icons/light/vk.png" alt="Вконтакте" /></a>
         <a href="https://www.instagram.com/krabochki/">
-            <img src="Assets/Pictures/inst.png" alt="Instagram" /></a>
+          <img id="inst" src="Assets/Pictures/icons/light/inst.png" alt="Instagram" /></a>
     </footer>
-</body>
-<script src="Scripts/script.js"></script>
+
+    <script src="Scripts/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -168,4 +209,7 @@
         },
     });
 </script>
+<script src="Scripts/language.js"></script>
+</body>
+
 </html>

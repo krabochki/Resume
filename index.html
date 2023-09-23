@@ -2,211 +2,315 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="Styles/styles.css" />
-  <link rel="stylesheet" href="Styles/fonts.css" />
-  <link rel="icon" type="image/x-icon" href="Assets/Pictures/icon.ico" />
-  <meta name="author" content="Полина Кузьменок" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/styles.css">
+  <link rel="stylesheet" href="Styles/fonts.css">
+  <link rel="icon" type="image/x-icon" href="Assets/Pictures/icon.ico">
+  <meta name="author" content="Полина Кузьменок">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <meta name="keywords" content="Резюме, поиск работы, программирование" />
-  <meta name="description" content="Этот сайт содержит резюме Полины Кузьменок" />
+  <meta name="keywords" content="Резюме, поиск работы, программирование">
+  <meta name="description" content="Этот сайт содержит резюме Полины Кузьменок">
   <noscript>
     <style>
       .body_hide {
         opacity: 1 !important;
       }
     </style>
-  </noscript>`
-  <title>Резюме</title>
+  </noscript>
+  <title class="lang" key="resume">Резюме</title>
 </head>
 <body class="body_hide">
+  <div id="settings-mobile">
+    <div> </div>
+    <div> </div>
+    <div> </div>
+  </div>
   <aside>
+    <button id="lang-switcher">°°°</button>
+   
+    <div id="lang-panel">
+      <div>          <p class="lang" key="choose-lang">Выберите язык</p>
+      </div>
+      <div>
+        
+        <span  id="en" class="translate">
+          <img src="Assets/Pictures/en.png" alt="">
+            <button value="">en</button>
+        </span>
+        <span class="active translate"  id="ru">
+          <img src="Assets/Pictures/ru.png" alt="">
+
+            <button value="">ru</button>
+        </span>
+          <span  id="be" class="translate">
+            <img src="Assets/Pictures/by.png" alt="">
+
+            <button value="">by</button>
+          </span>
+      </div>
+
+      <div>
+
+        <label class="toggle">
+          <span class="toggle-label lang" key="dark-mode">Тёмный режим </span>
+          <input class="toggle-checkbox"  onchange="changeMode(this)" type="checkbox" unchecked>
+          <div class="toggle-switch"></div>
+        </label>
+        
+      </div>
+      
+    </div>
+   
     <ul>
-      <li id="h1">Образование</li>
-      <li id="h2">Опыт</li>
-      <li id="h3">Проекты</li>
-      <li id="h4">Навыки</li>
-      <li id="h5">Доп. навыки</li>
-      <li id="h6">Хобби</li>
+    
+            <li class="lang" key="aside-content">Содержание</li>
+
+      <li class="lang" key="aside-education" id="h1">Образование</li>
+      <li class="lang" key="aside-experience" id="h2">Опыт</li>
+      <li class="lang" key="aside-projects" id="h3">Проекты</li>
+      <li class="lang" key="aside-skills" id="h4">Навыки</li>
+      <li class="lang" key="aside-languages" id="h5">Языки</li>
+      <li class="lang" key="aside-hobbies" id="h6">Увлечения</li>
     </ul>
   </aside>
   <main>
-    <h1>Полина Кузьменок</h1>
+    <h1 class="lang" key="name">Полина Кузьменок</h1>
     <div class="location">
-      <img src="Assets/Pictures/planet.png" alt="Геолокация" />
-      <p>Гродно, Беларусь</p>
+      <img src="Assets/Pictures/icons/light/planet.png" id="geo" alt="Геолокация" />
+      <p class="lang" key="location">Гродно, Беларусь</p>
     </div>
     <table>
       <tr>
-        <td>Мобильный телефон</td>
+        <td class="lang" key="mobile">Мобильный телефон</td>
         <td><a href="tel:+375291510475">+375 (29) 151-04-75</a></td>
       </tr>
       <tr>
-        <td>Электронная почта</td>
+        <td class="lang" key="email">Электронная почта</td>
         <td>
           <a href="mailto:polinaa.kuzmenokk@gmail.com">polinaa.kuzmenokk@gmail.com</a>
         </td>
       </tr>
       <tr>
-        <td>Возраст</td>
-        <td>18 лет (род. 06.08.2005)</td>
+        <td class="lang" key="age">Возраст</td>
+        <td class="lang" key="my-age">18 лет (род. 06.08.2005)</td>
       </tr>
     </table>
-    <section id="1">
-      <h2>Образование</h2>
-      <p>
-        ГГПК, Гродно (Гродненский государственный политехнический колледж)
-      </p>
-      <ul>
-        <li>Срок обучения: 2020 – наст. время (выпуск в июне 2024)</li>
-        <li>Квалификация: техник-программист</li>
-        <li>
-          Специализация: «Программное обеспечение обработки экономической и
-          деловой информации»
-        </li>
-      </ul>
-    </section>
-    <section id="2">
-      <h2>Опыт</h2>
-      <h3>SQILSoft</h3> <span>янв. - фев. 2023</span>
-      <p>Гродненская IT-компания (производственная практика на 3 курсе)</p>
-      <ul>
-        <li>Изучение и работа с ОС Linux</li>
-        <li>Изучение технологии Docker</li>
-        <li>Работа с Jira, BitBucket, Confluence</li>
-        <li>Разработка приложения Your Timer</li>
-      </ul>
-    </section>
-    <section id="3">
-      <h2>Проекты</h2>
-      <h3>Your Timer</h3> <span>2023</span> <span>TypeScript</span>
-      <p> Приложение таймера на фреймворке Angular
-      </p>
-      <ul>
-        <li> Создавался во время практики на 3 курсе
-        <li><a href="https://github.com/krabochki/YourTimer">Репозиторий на GitHub</a>
-        </li>
-        <li><a href="https://practice.sqilsoft.by/sandbox/palina_kuzmianok/timer/">Сайт «Your Timer»</a>
-        </li>
-      </ul>
-      <h3>Family Tree</h3> <span>2023</span> <span>C#</span>
-      <p>Приложение для создания и визуализации генеалогического древа
-      </p>
-      <ul>
-        <li> Создавался в качестве курсового проекта в конце 3 курса
-        <li><a href="https://github.com/krabochki/FamilyTree">Репозиторий на GitHub</a>
-        </li>
-        <li> <a href="family-tree.html"> Просмотреть приложение</a>
-        </li>
-      </ul>
-      <h3>Планеты Солнечной системы</h3> <span>2022</span> <span>Delphi</span>
-      <p> Игровое и познавательное приложение для знакомства с планетами Солнечной системы</p>
-      <ul>
-        <li> Создавался в качестве курсового проекта в конце 2 курса
-        <li> <a href="https://github.com/krabochki/PlanetsOfSolarSystem">Репозиторий на GitHub</a>
-        </li>
-        <li> <a href="solar-system-planets.html">Просмотреть приложение</a>
-        </li>
-      </ul>
-      <h3>Политех</h3> <span>2022</span> <span>Unity, C#</span>
-      <p>Игра про политех (мой проект для учебной дисциплины на 3 курсе)</p>
-      <ul>
-        <li> Проект для учебной дисциплины на 3 курсе
-        <li> <a href="https://github.com/krabochki/Polytech"> Репозиторий на GitHub </a>
-        </li>
-        <li> <a href="polytech.html">Просмотреть приложение</a>
-        </li>
-      </ul>
-      <h3>Proflex</h3><span>2022</span> <span>HTML, CSS, JavaScript</span>
-      <p>Фронтенд часть сайта для изучения дисциплины "Профессиональная лексика (английский язык)"</p>
-      <ul>
-        <li>Создавался во время практики на 2 курсе</li>
-        <li> <a href="https://github.com/krabochki/Proflex"> Репозиторий на GitHub</a>
-        </li>
-        <li> <a href="https://practice.sqilsoft.by/sandbox/palina_kuzmianok/proflex/"> Сайт «Proflex» </a>
-        </li>
-      </ul>
-      <p id="also"> ...а также небольшие сайты для практики в веб-разработке.
-      </p>
-    </section>
-    <section id="4">
-      <h2>Навыки</h2>
-      <p>Веб-разработка:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Angular</li>
-        <li>Visual Studio Code</li>
-        <li>WebStorm</li>
-      </ul>
-      <p>Языки программирования: </p>
-      <ul>
-        <li>JavaScript, TypeScript</li>
-        <li>C# (Visual Studio)</li>
-        <li>Delphi 11</li>
-      </ul>
-      <p>Основы в рамках учебной программы: </p>
-      <ul>
-        <li>1C Бухгалтерия</li>
-        <li>PyCharm (Python)</li>
-        <li>Unity и C# для Unity</li>
-        <li>IntelliJ IDEA (Java)</li>
-      </ul>
-    </section>
-    <section id="5">
-      <h2>Дополнительные навыки</h2>
-      <ul>
-        <li>Веб-дизайн, графический дизайн, UI/UX</li>
-        <li>Photoshop CS6, Corel DRAW, Figma</li>
-        <li>Jira, Confluence</li>
-        <li>Git, BitBucket</li>
-        <li>MySQL, MS Access</li>
-        <li>Windows, Linux</li>
-      </ul>
-      <h3>Языки</h3>
-      <ul>
-        <li>Русский язык (родной)</li>
-        <li>Беларуская мова (свободно владею)</li>
-        <li>English (upper-intermediate)</li>
-        <li>Español (базовые знания)</li>
-      </ul>
-    </section>
-    <section id="6">
-      <hr>
-      <h2>Хобби</h2>
-      <h3>Увлечения</h3>
-      <ul>
-        <li>Танцы</li>
-        <li>Велоспорт</li>
-        <li>Рисование</li>
-        <li>Кулинария</li>
-        <li>Шахматы</li>
-        <li>Чтение</li>
-      </ul>
-      <h3>Интересы</h3>
-      <ul>
-        <li>История</li>
-        <li>Криптозоология</li>
-        <li>Детективы</li>
-        <li>Криминалистика</li>
-        <li>Право</li>
-      </ul>
-    </section>
+    <div id="main-span">
+      <section id="1">
+        
+
+        <h2 class="lang" key="education">Образование</h2>
+        <p class="lang" key="my-education">
+          ГГПК, Гродно (Гродненский государственный политехнический колледж)
+        </p>
+        <ul>
+          <li class="lang" key="time-of-education">Срок обучения: 2020 – наст. время (выпуск в июне 2024)</li>
+          <li  class="lang" key="qualification">Квалификация: техник-программист</li>
+          <li class="lang" key="specialization">
+            Специализация: «Программное обеспечение обработки экономической и
+            деловой информации»
+          </li>
+        </ul>
+      </section>
+      <section id="2">
+        <h2 class="lang" key="experience">Опыт</h2>
+        <h3>SQILSoft</h3> <span class="lang" key="sqilsoft-term">фев. - март 2023</span>
+        <p class="lang" key="sqilsoft">Гродненская IT-компания (производственная практика на 3 курсе)</p>
+        <ul>
+          <li class="lang" key="linux">Изучение и работа с ОС Linux</li>
+          <li class="lang" key="docker">Изучение технологии Docker</li>
+          <li class="lang" key="jira">Работа с Jira, BitBucket, Confluence</li>
+          <li class="lang" key="timer-prod">Разработка приложения Your Timer</li>
+        </ul>
+      </section>
+      <section id="3">
+
+        <h2 class="lang" key="proj">Проекты</h2>
+        <h3>Your Timer</h3> <span>2023</span> <span>TypeScript</span>
+        <p class="lang" key="proj-timer"> Приложение таймера на фреймворке Angular
+        </p>
+        <ul>
+          <li class="lang" key="proj-timer-while"> Создавался во время практики на 3 курсе
+          <li><a href="https://github.com/krabochki/YourTimer" class="lang" key="proj-timer-repo">Репозиторий на GitHub</a>
+          </li>
+          <li><a href="https://practice.sqilsoft.by/sandbox/palina_kuzmianok/timer/" class="lang" key="proj-timer-website">Сайт «Your Timer»</a>
+          </li>
+        </ul>
+        <h3>Family Tree</h3> <span>2023</span> <span>C#</span>
+        <p class="lang" key="proj-tree">Приложение для создания и визуализации генеалогического древа
+        </p>
+        <ul>
+          <li class="lang" key="proj-tree-while"> Создавался в качестве курсового проекта в конце 3 курса
+          <li ><a href="https://github.com/krabochki/FamilyTree" class="lang" key="proj-tree-repo">Репозиторий на GitHub</a>
+          </li>
+          <li > <a class="lang" key="proj-tree-app" href="family-tree.html"> Просмотреть приложение</a>
+          </li>
+        </ul>
+        <h3 class="lang" key="proj-planets-name">Планеты Солнечной системы</h3> <span>2022</span> <span>Delphi</span>
+        <p class="lang" key="proj-planets"> Игровое и познавательное приложение для знакомства с планетами Солнечной системы</p>
+        <ul>
+          <li class="lang" key="proj-planets-while"> Создавался в качестве курсового проекта в конце 2 курса
+          <li> <a  class="lang" key="proj-planets-repo" href="https://github.com/krabochki/PlanetsOfSolarSystem">Репозиторий на GitHub</a>
+          </li>
+          <li> <a class="lang" key="proj-planets-app" href="solar-system-planets.html">Просмотреть приложение</a>
+          </li>
+        </ul>
+        <h3 class="lang" key="proj-polytech-name">Политех</h3> <span>2022</span> <span>Unity, C#</span>
+        <p class="lang" key="proj-polytech" >Игра про политех (моё учебное заведение)</p>
+        <ul>
+          <li class="lang" key="proj-polytech-while"> Проект для учебной дисциплины на 3 курсе
+          <li> <a href="https://github.com/krabochki/Polytech" class="lang" key="proj-polytech-repo"> Репозиторий на GitHub </a>
+          </li>
+          <li> <a class="lang" key="proj-polytech-app" href="polytech.html">Просмотреть приложение</a>
+          </li>
+        </ul>
+        <h3>Proflex</h3><span>2022</span> <span>HTML, CSS, JavaScript</span>
+        <p class="lang" key="proj-proflex">Фронтенд часть сайта для изучения дисциплины «Профессиональная лексика (английский язык)»</p>
+        <ul>
+          <li class="lang" key="proj-proflex-while">Создавался во время практики на 2 курсе</li>
+          <li > <a class="lang" key="proj-proflex-repo" href="https://github.com/krabochki/Proflex"> Репозиторий на GitHub</a>
+          </li>
+          <li > <a class="lang" key="proj-proflex-website" href="https://practice.sqilsoft.by/sandbox/palina_kuzmianok/proflex/"> Сайт «Proflex» </a>
+          </li>
+        </ul>
+        <p id="also" class="lang" key="small-sites"> ...а также небольшие сайты для практики в веб-разработке. </p>
+      </section>
+      <section id="4">
+        <h2 class="lang" key="skills" >Навыки</h2>
+
+        <h3>Hard skills</h3>
+        <p class="lang" key="web">Веб-разработка:</p>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Angular</li>
+          <li>Visual Studio Code</li>
+          <li>WebStorm</li>
+        </ul>
+        <p class="lang" key="pro-lang">Языки программирования: </p>
+        <ul>
+          <li>JavaScript, TypeScript</li>
+          <li>C# (Visual Studio)</li>
+          <li>Delphi 11</li>
+        </ul>
+        <p class="lang" key='base'>Основы в рамках учебной программы: </p>
+        <ul>
+          <li class="lang" key="1c">1C Бухгалтерия</li>
+          <li>PyCharm (Python)</li>
+          <li>Unity (C#)</li>
+          <li>IntelliJ IDEA (Java)</li>
+        </ul>
+        <h3>Soft skills</h3>
+
+
+          
+          <p class="lang" key="approach">Подход к работе:</p>
+          <ul>
+            <li class="lang" key="thinking">Нестандартное мышление и креативность</li>
+            <li class="lang" key="quality">Работа на качество и добросовестность</li>
+          </ul>
+
+          <p class="lang" key="learn">Обучаемость</p>
+          
+          <ul>
+            <li class="lang" key="fast-learn">Быстрая обучаемость и желание развиваться</li>
+            <li class="lang" key="critic">Восприимчивость к конструктивной критике</li>
+          </ul>
+
+
+          <p class="lang" key="personality">Характер</p>
+
+          <ul>
+            <li class="lang" key="friend">Дружелюбие</li>
+            <li class="lang" key="sociability">Общительность</li>
+            <li class="lang" key="versitility">Разносторонность</li>
+          </ul>
+
+          <p class="lang" key="organization">Организация работы</p>
+          <ul>
+            <li class="lang" key="multitask">Мультизадачность</li>
+            <li class="lang" key="time-manage">Тайм-менеджмент</li>
+          </ul>
+
+          
+
+
+
+        <h3>Extra skills</h3>
+
+
+
+
+        <p class="lang" key="design_">Дизайн:</p>
+
+        <ul>
+          <li class="lang" key="web-design">Веб-дизайн, графический дизайн, UI/UX</li>
+          <li>Photoshop CS6, Corel DRAW, Figma</li>
+        </ul>
+
+        <p class="lang" key="program-own"program-own>Владение программами:</p>
+          <ul>
+            <li >Jira, Confluence</li>
+            <li>Git, BitBucket</li>
+            <li>MySQL, MS Access</li>
+          </ul>
+
+          <p class="lang" key="os">Операционные системы:</p>
+          <ul>
+            <li class="lang" key="windows">Windows (основная)</li>
+            <li class="lang" key="lin">Linux (есть опыт)</li>
+     
+      </section>
+      <section id="5">
+<h2 class="lang" key="languages">Языки</h2>
+
+<ul>
+  <li class="lang" key="rus-lang">Русский язык (родной, основной)</li>
+  <li class="lang" key="bel-lang">Беларуская мова / Белорусский язык (родной, не основной)</li>
+  <li class="lang" key="eng-lang">English / Английский язык (Upper-Intermediate)</li>
+  <li class="lang" key="spa-lang">Español / Испанский язык (базовые знания)</li>
+</ul>
+      </section>
+     
+      <section id="6">
+        <hr>
+        <h2 class="lang" key="leisure">Увлечения</h2>
+        <h3 class="lang" key="hobby">Хобби</h3>
+        <ul>
+          <li  class="lang" key="dance">Танцы</li>
+          <li  class="lang" key="bicycle">Велоспорт</li>
+          <li  class="lang" key="paint">Рисование</li>
+          <li  class="lang" key="cook">Кулинария</li>
+          <li  class="lang" key="makeup">Визаж</li>
+          <li  class="lang" key="chess">Шахматы</li>
+          <li class="lang" key="read">Чтение</li>
+        </ul>
+        <h3  class="lang" key="interests">Интересы</h3>
+        <ul>
+          <li  class="lang" key="history">История</li>
+          <li  class="lang" key="cryptozoo">Криптозоология</li>
+          <li  class="lang" key="detective">Детективы</li>
+          <li  class="lang" key="criminalistics">Криминалистика</li>
+          <li  class="lang" key="human-rights">Право</li>
+        </ul>
+      </section>
+    </span>
   </main>
   <footer>
-    <p>Я в социальных сетях</p>
+    <p class="lang" key="social-media">Я в социальных сетях</p>
     <a href="https://github.com/krabochki/">
-      <img src="Assets/Pictures/github.png" alt="Github" /></a>
+      <img id="git" src="Assets/Pictures/icons/light/github.png" alt="Github" /></a>
     <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
-      <img src="Assets/Pictures/linkedin.png" alt="LinkedIn" /></a>
+      <img id="linkedin" src="Assets/Pictures/icons/light/linkedin.png" alt="LinkedIn" /></a>
       <a href="https://t.me/krabochki">
-      <img src="Assets/Pictures/telegram.png" alt="Telegram" /></a>
+      <img id="telegram" src="Assets/Pictures/icons/light/telegram.png" alt="Telegram" /></a>
     <a href="https://vk.com/nanananana_come_on">
-      <img src="Assets/Pictures/vk.png" alt="Вконтакте" /></a>
+      <img id="vk" src="Assets/Pictures/icons/light/vk.png" alt="Вконтакте" /></a>
     <a href="https://www.instagram.com/krabochki/">
-      <img src="Assets/Pictures/inst.png" alt="Instagram" /></a>
+      <img id="inst" src="Assets/Pictures/icons/light/inst.png" alt="Instagram" /></a>
   </footer>
-  
+  <script src="Scripts/script.js"></script>
+  <script src="Scripts/language.js"></script>  
 </body>
-<script src="Scripts/script.js"></script>
+
 </html>

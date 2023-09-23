@@ -26,16 +26,16 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgb(192, 129, 255) !important;
+  color: var(--lavender) !important;
 }
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: rgb(192, 129, 255) !important;
+  background: var(--lavender) !important;
 }
 .swiper p {
   font-size: 1rem;
   margin: 0;
-  color: gray;
+  color: var(--active);
   margin-bottom: 0.5em;
 }
 @media (max-width: 768px) {

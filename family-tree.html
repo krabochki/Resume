@@ -23,207 +23,250 @@
 </head>
 <body class="body_hide">
     <aside>
+        <button id="lang-switcher">°°°</button>
+        <div id="lang-panel">
+          <div>          <p class="lang" key="choose-lang">Выберите язык</p>
+          </div>
+          <div>
+            
+            <span  id="en" class="translate">
+              <img src="Assets/Pictures/en.png" alt="">
+                <button value="">en</button>
+            </span>
+            <span class="active translate"  id="ru">
+              <img src="Assets/Pictures/ru.png" alt="">
+    
+                <button value="">ru</button>
+            </span>
+              <span  id="be" class="translate">
+                <img src="Assets/Pictures/by.png" alt="">
+    
+                <button value="">by</button>
+              </span>
+          </div>
+    
+          <div>
+    
+            <label class="toggle">
+              <span class="toggle-label lang" key="dark-mode">Тёмный режим </span>
+              <input class="toggle-checkbox"  onchange="changeMode(this)" type="checkbox" unchecked>
+              <div class="toggle-switch"></div>
+            </label>
+            
+          </div>
+          
+        </div>
         <ul>
-            <li id="h1">Описание</li>
-            <li id="h2">Технологии</li>
-            <li id="h3">Разработка</li>
-            <li id="h4">Содержание</li>
-            <li id="h5">Просмотр</li>
+    <li class="lang" key="contents">Содержание</li>
+    <li class="lang" key="description" id="h1">Описание</li>
+    <li class="lang" key="technologies" id="h2">Технологии</li>
+    <li class="lang" key="development" id="h3">Разработка</li>
+    <li class="lang" key="contents" id="h4">Содержание</li>
+    <li class="lang" key="view" id="h5">Просмотр</li>
         </ul>
-        <a href="index.html"> <button>> На главную</button></a>
+<a href="index.html"><button class="lang" key="home">На главную</button></a>
+
     </aside>
     <main>
         <div class="go-away">
             <a href="index.html" title="Назад"><button>
-                    <</button></a>
+                    < </button></a>
             <h1>Family Tree</h1>
         </div>
-        <section id="1">
-            <h2>Описание</h2>
-            <h3>Описание проекта</h3>
-            <p>
-                Компьютерное приложение для создания и
-                редактирования генеалогических деревьев.
-            </p>
-            <h3>Цель проекта</h3>
-            <p>
-                Разработать программное обеспечение, обеспечивающее удобный и
-                интуитивно понятный интерфейс, который позволит пользователям легко
-                создавать, редактировать и визуализировать свои генеалогические древа.
-                Программный продукт обеспечивает удобное и наглядное представление
-                генеалогической информации, позволяя пользователям оживить свою
-                генеалогическую историю и просматривать в электронном виде свои
-                родственные связи.
-            </p>
-            <h3>Ссылки</h3>
-            <p><a href="https://github.com/krabochki/FamilyTree">Репозиторий</a></p>
-            <p><a href="Assets/Docs/Family Tree docs.docx">Документация</a></p>
-        </section>
-        <section id="2">
-            <h2>Технологии</h2>
-            <ul>
-                <li>Язык программирования: C#</li>
-                <li>Среда разработки: Microsoft Visual Studio</li>
-                <li>Фреймоворк: Windows Presentation Foundation (WPF)</li>
-                <li>Библиотеки: GiGraph (на основе Graphviz)</li>
-            </ul>
-        </section>
-        <section id="3">
-            <h2>Разработка</h2>
-            <ul>
-                <li>Время разработки: июнь 2023</li>
-                <li>
-                    Этапы разработки:
-                    <ol>
-                        <li>Постановка задачи</li>
-                        <li>Проектирование</li>
-                        <li>Реализация</li>
-                        <li>Тестирование</li>
-                        <li>Применение</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
-        <section id="4">
-            <h2>Содержание</h2>
-            <h3>Меню</h3>
-            <p>
-                Четыре основных пункта меню, при помощи которых пользователь может
-                перемещаться по нужным таблицам и изменять их:
-            </p>
-            <ol>
-                <li>
-                    Персоны – с помощью этого пункта можно вносить изменения в таблицу
-                    персон базы данных
-                </li>
-                <li>
-                    Места – с помощью этого пункта можно вносить изменения в таблицу
-                    мест базы данных
-                </li>
-                <li>
-                    События – с помощью этого пункта можно вносить изменения в таблицу
-                    мест базы данных
-                </li>
-                <li>
-                    Древо – с помощью этого пункта можно создавать генеалогическое древо
-                    на основе данных таблицы
-                </li>
-            </ol>
-            <p>А также пункт меню «Настройки», позволяющий:</p>
-            <ol>
-                <li>Быстро открыть/создать новую базу</li>
-                <li>Открыть примеры готовых баз данных</li>
-                <li>Открыть справку</li>
-            </ol>
-            <h3>Функции</h3>
-            <p>Четыре основных функции со всеми таблицами:</p>
-            <ol>
-                <li>Добавление</li>
-                <li>Изменение</li>
-                <li>Удаление</li>
-                <li>Просмотр</li>
-            </ol>
-            <p>Дополнительные функции в «Персонах»:</p>
-            <ol>
-                <li>Фильтрация</li>
-                <li>Сортировка</li>
-            </ol>
-            <p></p>
-        </section>
-        <section id="5">
-            <h2 id="cent">Просмотр</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p>Главное меню</p>
-                        <img src="Assets/Pictures/Family Tree/1.png" alt="" />
+        <div id="main-span">
+            <section id="1">
+                  
+
+                
+ 
+                <h2 class="lang" key="description">Описание</h2>
+                <h3 class="lang" key="proj-descr">Описание проекта</h3>
+                <p class="lang" key="text-descr-tree">
+                    Компьютерное приложение для создания и
+                    редактирования генеалогических деревьев.
+                </p>
+                <h3 class="lang" key="goal">Цель проекта</h3>
+                <p class="lang" key="goal-tree">
+                    Разработать программное обеспечение, обеспечивающее удобный и
+                    интуитивно понятный интерфейс, который позволит пользователям легко
+                    создавать, редактировать и визуализировать свои генеалогические древа.
+                    Программный продукт обеспечивает удобное и наглядное представление
+                    генеалогической информации, позволяя пользователям оживить свою
+                    генеалогическую историю и просматривать в электронном виде свои
+                    родственные связи.
+                </p>
+                <h3 class="lang" key="links">Ссылки</h3>
+                <p><a class="lang" key="repo" href="https://github.com/krabochki/FamilyTree">Репозиторий</a></p>
+                <p><a class="lang" key="docs" href="Assets/Docs/Family Tree docs.docx">Документация</a></p>
+            </section>
+            <section id="2">
+
+            
+                <h2 class="lang" key="">Технологии</h2>
+                <ul>
+                    <li class="lang" key="language-tree">Язык программирования: C#</li>
+                    <li class="lang" key="environment-tree">Среда разработки: Microsoft Visual Studio</li>
+                    <li class="lang" key="framework-tree">Фреймворк: Windows Presentation Foundation (WPF)</li>
+                    <li class="lang" key="libs-tree">Библиотеки: GiGraph (на основе Graphviz)</li>
+                </ul>
+            </section>
+            <section id="3">
+                <h2 class="lang" key="develop">Разработка</h2>
+                <ul>
+                    <li class="lang" key="develop-tree-time">Время разработки: июнь 2023</li>
+                    <li >
+                       <span class="lang" key="stages"> Этапы разработки:</span>
+                        <ol>
+                            <li class="lang" key="problem">Постановка задачи</li>
+                            <li class="lang" key="design">Проектирование</li>
+                            <li class="lang" key="realize">Реализация</li>
+                            <li class="lang" key="test">Тестирование</li>
+                            <li class="lang" key="app">Применение</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+            <section id="4">
+                <h2 class="lang" key="cont">Содержание</h2>
+                <h3 class="lang" key="menu">Меню</h3>
+                <p class="lang" key="menuDescription">
+                    Четыре основных пункта меню, при помощи которых пользователь может
+                    перемещаться по нужным таблицам и изменять их:
+                </p>
+                <ol>
+                    <li class="lang" key="persons">
+                        Персоны – с помощью этого пункта можно вносить изменения в таблицу
+                        персон базы данных
+                    </li>
+                    <li class="lang" key="places">
+                        Места – с помощью этого пункта можно вносить изменения в таблицу
+                        мест базы данных
+                    </li>
+                    <li class="lang" key="events">
+                        События – с помощью этого пункта можно вносить изменения в таблицу
+                        мест базы данных
+                    </li>
+                    <li class="lang" key="tree">
+                        Древо – с помощью этого пункта можно создавать генеалогическое древо
+                        на основе данных таблицы
+                    </li>
+                </ol>
+                <p class="lang" key="settings">А также пункт меню «Настройки», позволяющий:</p>
+                <ol>
+                    <li class="lang" key="openCreateDB">Быстро открыть/создать новую базу</li>
+                    <li class="lang" key="openExamplesDB">Открыть примеры готовых баз данных</li>
+                    <li class="lang" key="openHelp">Открыть справку</li>
+                </ol>
+                <h3 class="lang" key="functions">Функции</h3>
+                <p class="lang" key="basicFunctions">Четыре основных функции со всеми таблицами:</p>
+                <ol>
+                    <li class="lang" key="add">Добавление</li>
+                    <li class="lang" key="edit">Изменение</li>
+                    <li class="lang" key="delete">Удаление</li>
+                    <li class="lang" key="view">Просмотр</li>
+                </ol>
+                <p class="lang" key="additionalFunctions">Дополнительные функции в «Персонах»:</p>
+                <ol>
+                    <li class="lang" key="filter">Фильтрация</li>
+                    <li class="lang" key="sort">Сортировка</li>
+                </ol>
+                
+            </section>
+            <section id="5">
+                <h2 id="cent" class="lang" key="view">Просмотр</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="lang" key="mainMenu">Главное меню</p>
+                            <img src="Assets/Pictures/Family Tree/1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="personsTable">Таблица персон</p>
+                            <img src="Assets/Pictures/Family Tree/2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="placesTable">Таблица мест</p>
+                            <img src="Assets/Pictures/Family Tree/3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="eventsTable">Таблица событий</p>
+                            <img src="Assets/Pictures/Family Tree/4.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="addPerson">Добавление персоны</p>
+                            <img src="Assets/Pictures/Family Tree/5.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="editPerson">Изменение персоны</p>
+                            <img src="Assets/Pictures/Family Tree/6.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="viewPerson">Просмотр персоны</p>
+                            <img src="Assets/Pictures/Family Tree/7.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="addEditPlace">Добавление/изменение места</p>
+                            <img src="Assets/Pictures/Family Tree/8.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="viewPlaces">Просмотр мест</p>
+                            <img src="Assets/Pictures/Family Tree/9.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="addEditEvent">Добавление/изменение события</p>
+                            <img src="Assets/Pictures/Family Tree/10.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="viewEvent">Просмотр события</p>
+                            <img src="Assets/Pictures/Family Tree/11.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="createTree">Создание древа</p>
+                            <img src="Assets/Pictures/Family Tree/12.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="selectTreeSettings">Выбор других настроек древа</p>
+                            <img src="Assets/Pictures/Family Tree/13.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="createdGenealogicalTree">Созданное генеалогическое древо</p>
+                            <img src="Assets/Pictures/Family Tree/14.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="filterNoPhoto">Фильтрация (показаны только люди без фото)</p>
+                            <img src="Assets/Pictures/Family Tree/15.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="filterAlive">Фильтрация (показаны только живые люди)</p>
+                            <img src="Assets/Pictures/Family Tree/16.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="other">Прочее</p>
+                            <img src="Assets/Pictures/Family Tree/17.png" alt="" />
+                        </div>
+                
                     </div>
-                    <div class="swiper-slide">
-                        <p>Таблица персон</p>
-                        <img src="Assets/Pictures/Family Tree/2.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Таблица мест</p>
-                        <img src="Assets/Pictures/Family Tree/3.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Таблица событий</p>
-                        <img src="Assets/Pictures/Family Tree/4.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Добавление персоны</p>
-                        <img src="Assets/Pictures/Family Tree/5.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Изменение персоны</p>
-                        <img src="Assets/Pictures/Family Tree/6.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Просмотр персоны</p>
-                        <img src="Assets/Pictures/Family Tree/7.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Добавление/изменение места</p>
-                        <img src="Assets/Pictures/Family Tree/8.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Просмотр мест</p>
-                        <img src="Assets/Pictures/Family Tree/9.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Добавление/изменение события</p>
-                        <img src="Assets/Pictures/Family Tree/10.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Просмотр события</p>
-                        <img src="Assets/Pictures/Family Tree/11.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Создание древа</p>
-                        <img src="Assets/Pictures/Family Tree/12.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Выбираем другие настройки древу</p>
-                        <img src="Assets/Pictures/Family Tree/13.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Созданное генеалогическое древо</p>
-                        <img src="Assets/Pictures/Family Tree/14.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Фильтрация (показаны только люди без фото)</p>
-                        <img src="Assets/Pictures/Family Tree/15.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Фильтрация (показаны только живые люди)</p>
-                        <img src="Assets/Pictures/Family Tree/16.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Прочее</p>
-                        <img src="Assets/Pictures/Family Tree/17.png" alt="" />
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Я в социальных сетях</p>
+        <p class="lang" key="social-media">Я в социальных сетях</p>
         <a href="https://github.com/krabochki/">
-            <img src="Assets/Pictures/github.png" alt="Github" /></a>
-            <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
-                <img src="Assets/Pictures/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://t.me/krabochki">
-            <img src="Assets/Pictures/telegram.png" alt="Telegram" /></a>
+          <img id="git" src="Assets/Pictures/icons/light/github.png" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
+          <img id="linkedin" src="Assets/Pictures/icons/light/linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://t.me/krabochki">
+          <img id="telegram" src="Assets/Pictures/icons/light/telegram.png" alt="Telegram" /></a>
         <a href="https://vk.com/nanananana_come_on">
-            <img src="Assets/Pictures/vk.png" alt="Вконтакте" /></a>
+          <img id="vk" src="Assets/Pictures/icons/light/vk.png" alt="Вконтакте" /></a>
         <a href="https://www.instagram.com/krabochki/">
-            <img src="Assets/Pictures/inst.png" alt="Instagram" /></a>
+          <img id="inst" src="Assets/Pictures/icons/light/inst.png" alt="Instagram" /></a>
     </footer>
-</body>
-<script src="Scripts/script.js"></script>
+    <script src="Scripts/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -240,4 +283,7 @@
         },
     });
 </script>
+<script src="Scripts/language.js"></script>
+</body>
+
 </html>

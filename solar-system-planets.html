@@ -19,213 +19,255 @@
             }
         </style>
     </noscript>
-    <title>Планеты Солнечной системы</title>
+    <title class="lang" key="head-planets">Планеты Солнечной системы</title>
 </head>
 <body class="body_hide">
     <aside>
+        <button id="lang-switcher">°°°</button>
+        <div id="lang-panel">
+            <div>
+            </div>
+          <div>          <p class="lang" key="choose-lang">Выберите язык</p>
+          </div>
+          <div>
+            
+            <span  id="en" class="translate">
+              <img src="Assets/Pictures/en.png" alt="">
+                <button value="">en</button>
+            </span>
+            <span class="active translate"  id="ru">
+              <img src="Assets/Pictures/ru.png" alt="">
+    
+                <button value="">ru</button>
+            </span>
+              <span  id="be" class="translate">
+                <img src="Assets/Pictures/by.png" alt="">
+    
+                <button value="">by</button>
+              </span>
+          </div>
+    
+          <div>
+    
+            <label class="toggle">
+              <span class="toggle-label lang" key="dark-mode">Тёмный режим </span>
+              <input class="toggle-checkbox"  onchange="changeMode(this)" type="checkbox" unchecked>
+              <div class="toggle-switch"></div>
+            </label>
+            
+          </div>
+          
+        </div>
         <ul>
-            <li id="h1">Описание</li>
-            <li id="h2">Технологии</li>
-            <li id="h3">Разработка</li>
-            <li id="h4">Содержание</li>
-            <li id="h5">Просмотр</li>
+
+            <li class="lang" key="contents">Содержание</li>
+            <li class="lang" key="description" id="h1">Описание</li>
+            <li class="lang" key="technologies" id="h2">Технологии</li>
+            <li class="lang" key="development" id="h3">Разработка</li>
+            <li class="lang" key="contents" id="h4">Содержание</li>
+            <li class="lang" key="view" id="h5">Просмотр</li>
         </ul>
-        <a href="index.html"> <button>> На главную</button></a>
+        <a href="index.html"><button class="lang" key="home">На главную</button></a>
     </aside>
     <main>
         <div class="go-away">
             <a href="index.html" title="Назад"><button>
                     <</button></a>
-            <h1>Планеты Солнечной системы</h1>
+            <h1 class="lang" key="h1-planets">Планеты Солнечной системы</h1>
         </div>
-        <section id="1">
-            <h2>Описание</h2>
-            <h3>Описание проекта</h3>
-            <p>Познавательное и игровое приложение для изучения темы космоса, планет и Солнечной системы.</p>
-            <h3>Цель проекта</h3>
-            <p>
-                Знакомство массового пользователя с планетами земной группы, интересными явлениями космоса, теориями в
-                области астробиологии, демонстрация при помощи визуализации различные космические явления.
-                Создаваемое приложение рассчитано на любого рода пользователей. Использовать его могут не только люди,
-                ранее изучающие тему космоса и желающие повысить уровень знаний, но и просто люди, заинтересовавшиеся в
-                данной теме.
-            </p>
-            <h3>Ссылки</h3>
-            <p><a href="https://github.com/krabochki/PlanetsOfSolarSystem">Репозиторий</a></p>
-            <p><a href="Assets/Docs/Planets of Solar System docs.docx">Документация</a></p>
-        </section>
-        <section id="2">
-            <h2>Технологии</h2>
-            <ul>
-                <li>Язык программирования: Delphi 11</li>
-                <li>Среда разработки: Embarcadero</li>
-            </ul>
-        </section>
-        <section id=3>
-            <h2>Разработка</h2>
-            <ul>
-                <li>Время разработки: июнь 2022</li>
-                <li>Этапы разработки:
-                    <ol>
-                        <li>Постановка задачи</li>
-                        <li>Проектирование</li>
-                        <li>Реализация</li>
-                        <li>Тестирование</li>
-                        <li>Применение</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
-        <section id="4">
-            <h2>Содержание</h2>
-            Игра содержит следующее наполнение:
-            <ul>
-                <li>Знакомство </li>
-                <li>Меню для перехода по разделам</li>
-                <li>
-                    Множество красочных разделов с теорией
-                </li>
-                <li>Тесты для закрепления знаний
-                    <ol>
-                        <li>Тест на рептилоида</li>
-                        <li>А ты точно с этой планеты?</li>
-                        <li>С какой ты планеты?</li>
-                    </ol>
-                </li>
-                <li>Игры:
-                    <ol>
-                        <li>Игра «Космические гонки»</li>
-                        <li>Игра «Паззлы»</li>
-                        <li>Игры «Расставь планеты в правильном порядке»</li>
-                        <li>Игра «Создай свою планету» </li>
-                        <li>Игра «Создай своего пришельца»</li>
-                    </ol>
-                </li>
-                <li>Просмотр справки</li>
-            </ul>
-        </section>
-        <section id="5">
-            <h2 id="cent">Просмотр</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p>Начальный экран</p>
-                        <img src="Assets/Pictures/Solar System planets/1.png" alt="" />
+        <div id="main-span">
+            <section id="1">
+                <h2 class="lang" key="description">Описание</h2>
+                <h3 class="lang" key="proj-descr">Описание проекта</h3>
+                <p class="lang" key="educationalAndEntertainmentApp">Познавательное и игровое приложение для изучения темы космоса, планет и Солнечной системы.</p>
+                <h3 class="lang" key="goal">Цель проекта</h3>
+                <p class="lang" key="userEngagementDescription">
+                    Знакомство массового пользователя с планетами земной группы, интересными явлениями космоса, теориями в
+                    области астробиологии, демонстрация при помощи визуализации различные космические явления.
+                    Создаваемое приложение рассчитано на любого рода пользователей. Использовать его могут не только люди,
+                    ранее изучающие тему космоса и желающие повысить уровень знаний, но и просто люди, заинтересовавшиеся в
+                    данной теме.
+                </p>
+                <h3 class="lang" key="links">Ссылки</h3>
+                <p><a class="lang" key="repo" href="https://github.com/krabochki/PlanetsOfSolarSystem">Репозиторий</a></p>
+                <p><a class="lang" key="docs" href="Assets/Docs/Planets of Solar System docs.docx">Документация</a></p>
+            </section>
+            <section id="2">
+                <h2 class="lang" key="technologies">Технологии</h2>
+                <ul>
+                    <li class="lang" key="programmingLanguage">Язык программирования: Delphi 11</li>
+                    <li class="lang" key="developmentEnvironment">Среда разработки: Embarcadero</li>
+                </ul>
+            </section>
+            <section id=3>
+                <h2 class="lang" key="develop">Разработка</h2>
+                <ul>
+                    <li class="lang" key="developmentTime">Время разработки: июнь 2022</li>
+                    <li>
+                        <span class="lang" key="stages"> Этапы разработки:</span>
+
+                        <ol>
+                            <li class="lang" key="problem">Постановка задачи</li>
+                            <li class="lang" key="design">Проектирование</li>
+                            <li class="lang" key="realize">Реализация</li>
+                            <li class="lang" key="test">Тестирование</li>
+                            <li class="lang" key="app">Применение</li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+            <section id="4">
+                <h2 class="lang" key="cont">Содержание</h2>
+              <p class="lang" key="gameContent">  Игра содержит следующее наполнение:</p class="lang" key="gameContent">
+                <ul>
+                    <li class="lang" key="intro">Знакомство</li>
+                    <li class="lang" key="menu">Меню для перехода по разделам</li>
+                    <li>
+                        <span class="lang" key="colorfulSections">Множество красочных разделов с теорией</span>
+                    </li>
+                    <li ><span class="lang" key="knowledgeTests">Тесты для закрепления знаний</span>
+                        <ol>
+                            <li class="lang" key="reptiloidTest">Тест на рептилоида</li>
+                            <li class="lang" key="areYouFromThisPlanet">А ты точно с этой планеты?</li>
+                            <li class="lang" key="whichPlanetAreYouFrom">С какой ты планеты?</li>
+                        </ol>
+                    </li>
+                    <li ><span class="lang" key="gamesHeader">Игры:</span>
+                        <ol>
+                            <li class="lang" key="spaceRaces">Игра «Космические гонки»</li>
+                            <li class="lang" key="puzzles">Игра «Паззлы»</li>
+                            <li class="lang" key="arrangePlanets">Игры «Расставь планеты в правильном порядке»</li>
+                            <li class="lang" key="createPlanet">Игра «Создай свою планету»</li>
+                            <li class="lang" key="createAlien">Игра «Создай своего пришельца»</li>
+                        </ol>
+                    </li>
+                    <li class="lang" key="viewHelp">Просмотр справки</li>
+                
+                </ul>
+            </section>
+            <section id="5" >
+                <h2 id="cent" class="lang" key="view">Просмотр</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide1">Начальный экран</p>
+                            <img src="Assets/Pictures/Solar System planets/1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide2">Настройки</p>
+                            <img src="Assets/Pictures/Solar System planets/2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide3">Предупреждение</p>
+                            <img src="Assets/Pictures/Solar System planets/3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide4">Меню</p>
+                            <img src="Assets/Pictures/Solar System planets/4.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide5">Часть знакомства</p>
+                            <img src="Assets/Pictures/Solar System planets/5.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide6">Рассказ о других персонажах</p>
+                            <img src="Assets/Pictures/Solar System planets/6.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide7">Знакомство с другими персонажами</p>
+                            <img src="Assets/Pictures/Solar System planets/7.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide8">Пример описания персонажа</p>
+                            <img src="Assets/Pictures/Solar System planets/8.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide9">Ещё немного персонажей...</p>
+                            <img src="Assets/Pictures/Solar System planets/9.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide10">Пример описания персонажа</p>
+                            <img src="Assets/Pictures/Solar System planets/10.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide11">Летим к разблокировке меню</p>
+                            <img src="Assets/Pictures/Solar System planets/11.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide12">Меню с разблокированными опциями</p>
+                            <img src="Assets/Pictures/Solar System planets/12.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide13">Раздел о планетах. Введение</p>
+                            <img src="Assets/Pictures/Solar System planets/13.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide14">Земля</p>
+                            <img src="Assets/Pictures/Solar System planets/14.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide15">Расставь планеты в правильном порядке до Солнца</p>
+                            <img src="Assets/Pictures/Solar System planets/15.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide16">Расставь планеты в правильном порядке по возрастанию</p>
+                            <img src="Assets/Pictures/Solar System planets/16.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide17">Создай свою планету</p>
+                            <img src="Assets/Pictures/Solar System planets/17.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide18">Пример созданной планеты</p>
+                            <img src="Assets/Pictures/Solar System planets/18.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide19">Один из тестов</p>
+                            <img src="Assets/Pictures/Solar System planets/19.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide20">Раздел об инопланетянах. Введение</p>
+                            <img src="Assets/Pictures/Solar System planets/20.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide21">Создай своего инопланетянина</p>
+                            <img src="Assets/Pictures/Solar System planets/21.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide22">Пример созданного инопланетянина</p>
+                            <img src="Assets/Pictures/Solar System planets/22.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide23">Интересные факты о космосе</p>
+                            <img src="Assets/Pictures/Solar System planets/23.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="lang" key="slide24">Гонки планет</p>
+                            <img src="Assets/Pictures/Solar System planets/24.png" alt="" />
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <p>Настройки</p>
-                        <img src="Assets/Pictures/Solar System planets/2.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Предупреждение</p>
-                        <img src="Assets/Pictures/Solar System planets/3.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Меню</p>
-                        <img src="Assets/Pictures/Solar System planets/4.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Часть знакомства</p>
-                        <img src="Assets/Pictures/Solar System planets/5.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Рассказ о других персонажах</p>
-                        <img src="Assets/Pictures/Solar System planets/6.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Знакомство с другими персонажами</p>
-                        <img src="Assets/Pictures/Solar System planets/7.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Пример описания персонажа</p>
-                        <img src="Assets/Pictures/Solar System planets/8.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Ещё немного персонажей...</p>
-                        <img src="Assets/Pictures/Solar System planets/9.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Пример описания персонажа</p>
-                        <img src="Assets/Pictures/Solar System planets/10.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Летим к разблокировке меню</p>
-                        <img src="Assets/Pictures/Solar System planets/11.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Меню с разблокированными опциями</p>
-                        <img src="Assets/Pictures/Solar System planets/12.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Раздел о планетах. Введение</p>
-                        <img src="Assets/Pictures/Solar System planets/13.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Земля</p>
-                        <img src="Assets/Pictures/Solar System planets/14.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Расставь планеты в правильном порядке до Солнца</p>
-                        <img src="Assets/Pictures/Solar System planets/15.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Расставь планеты в правильном порядке по возрастанию</p>
-                        <img src="Assets/Pictures/Solar System planets/16.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Создай свою планету</p>
-                        <img src="Assets/Pictures/Solar System planets/17.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Пример созданной планеты</p>
-                        <img src="Assets/Pictures/Solar System planets/18.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Один из тестов</p>
-                        <img src="Assets/Pictures/Solar System planets/19.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Раздел об инопланетянах. Введение</p>
-                        <img src="Assets/Pictures/Solar System planets/20.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Создай своего инопланетянина</p>
-                        <img src="Assets/Pictures/Solar System planets/21.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Пример созданного инопланетянина</p>
-                        <img src="Assets/Pictures/Solar System planets/22.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Интересные факты о космосе</p>
-                        <img src="Assets/Pictures/Solar System planets/23.png" alt="" />
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Гонки планет</p>
-                        <img src="Assets/Pictures/Solar System planets/24.png" alt="" />
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Я в социальных сетях</p>
+        <p class="lang" key="social-media">Я в социальных сетях</p>
         <a href="https://github.com/krabochki/">
-            <img src="Assets/Pictures/github.png" alt="Github" /></a>
-            <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
-                <img src="Assets/Pictures/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://t.me/krabochki">
-            <img src="Assets/Pictures/telegram.png" alt="Telegram" /></a>
+          <img id="git" src="Assets/Pictures/icons/light/github.png" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291/">
+          <img id="linkedin" src="Assets/Pictures/icons/light/linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://t.me/krabochki">
+          <img id="telegram" src="Assets/Pictures/icons/light/telegram.png" alt="Telegram" /></a>
         <a href="https://vk.com/nanananana_come_on">
-            <img src="Assets/Pictures/vk.png" alt="Вконтакте" /></a>
+          <img id="vk" src="Assets/Pictures/icons/light/vk.png" alt="Вконтакте" /></a>
         <a href="https://www.instagram.com/krabochki/">
-            <img src="Assets/Pictures/inst.png" alt="Instagram" /></a>
+          <img id="inst" src="Assets/Pictures/icons/light/inst.png" alt="Instagram" /></a>
     </footer>
-</body>
-<script src="Scripts/script.js"></script>
+
+    <script src="Scripts/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -242,4 +284,7 @@
         },
     });
 </script>
+<script src="Scripts/language.js"></script>
+</body>
+
 </html>
