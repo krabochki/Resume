@@ -3,9 +3,6 @@
 
 <br />
 <div align="center">
-  <a href="https://krabochki.github.io/Resume/">
-    <img src="Assets/Pictures/icon.ico" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Резюме</h3>
 
