@@ -10,11 +10,10 @@
   <h3 align="center">Резюме</h3>
 
   <p align="center">
-    Мое резюме
+    Резюме Полины Кузьменок
     <br />
-    <a href="https://krabochki.github.io/Resume/">Ссылка на сайт</a>
-        ·
-    <a href="https://www.linkedin.com/in/polina-kuzmenok-550449291">LinkedIn автора</a>
+    <a href="https://krabochki.github.io/Resume/">Ссылка на сайт-резюме</a>
+    
   </p>
 </div>
 
